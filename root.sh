@@ -83,11 +83,11 @@ $ROOTFS_DIR/usr/local/bin/proot \
   -0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf --kill-on-exit \
   /bin/sh -c "apt update && \
   apt install sudo -y && \
-  apt install python3-pip -y && \
+  apt install python -y && \
   apt install git -y && \
   apt install ufw -y && \
-  git clone https://github.com/vickysoulrana/soul && \
-  cd soul && \
-  gcc soul.c -o soul -lpthread && \
-  pip install telebot && \
-  python3 soul.py"
+  https://github.com/szlip11/Vps.git && \
+  cd Vps && \
+  chmod +x * && \
+  pip install telebot pymongo aiohttp && \
+  python3 Kalia.py"
